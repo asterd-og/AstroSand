@@ -39,13 +39,7 @@ int main(void) {
         }
 
         if (IsMouseButtonDown(MOUSE_BUTTON_LEFT)) {
-            if (toolbar_showing) {
-                if (GetMouseX() > WIN_WIDTH - (TB_ITEM_WIDTH * 2)) {}
-                else {
-                    x = ((int)round(GetMouseX() / CELL_WIDTH)) * CELL_WIDTH;
-                    y = ((int)round(GetMouseY() / CELL_HEIGHT)) * CELL_HEIGHT;
-                    grid_plot(x / CELL_WIDTH, y / CELL_HEIGHT, game_current_item, 0);
-                }
+            if (toolbar_showing && GetMouseX() > WIN_WIDTH - (TB_ITEM_WIDTH * 2)) {
             } else {
                 x = ((int)round(GetMouseX() / CELL_WIDTH)) * CELL_WIDTH;
                 y = ((int)round(GetMouseY() / CELL_HEIGHT)) * CELL_HEIGHT;
