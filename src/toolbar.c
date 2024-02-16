@@ -47,6 +47,8 @@ void toolbar_add_item(Color color, char* name, int item) {
 }
 
 void toolbar_init() {
+    toolbar_add_item(DARKGRAY, "NULL", 0);
     toolbar_add_item(YELLOW, "sand", 1);
     toolbar_add_item(BLUE, "water", 2);
+    toolbar_add_item(BLACK, "wall", 3);
 }

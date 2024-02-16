@@ -12,15 +12,17 @@ cell* grid;
 
 typedef void(*cell_step)(cell*, int, int);
 cell_step step_func[32] = {
-    NULL,
+    cell_wall_step, // NULL object,
     cell_sand_step,
-    cell_water_step
+    cell_water_step,
+    cell_wall_step
 };
 
 Color cell_colors[32] = {
-    BLACK,
+    DARKGRAY,
     YELLOW,
-    BLUE
+    BLUE,
+    BLACK,
 };
 
 void grid_draw() {

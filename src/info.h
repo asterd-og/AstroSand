@@ -3,8 +3,8 @@
 #define WIN_WIDTH 768
 #define WIN_HEIGHT 512 // Both divisible by 24.
 
-#define CELL_WIDTH 32
-#define CELL_HEIGHT 32
+#define CELL_WIDTH 24
+#define CELL_HEIGHT 24
 
 #define GRID_WIDTH (WIN_WIDTH / CELL_WIDTH)
 #define GRID_HEIGHT (WIN_HEIGHT / CELL_HEIGHT)
